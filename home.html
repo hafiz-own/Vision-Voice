@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Upload any PDF and our website will read it aloud, making learning easier and more inclusive.With simple controls, dark mode, and voice commands, reading is now just a click or word away.">
+    <title>Vision Voice</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/myfavicon.png">
+    <script src="./home.js" defer></script>
+</head>
+<body>
+    <header>
+        <main class="header-top">
+            <h1>Vision Voice</h1>
+            <div class="headerBtns">
+                <p id="status"></p>
+                <button class="voice-btn" id="voice-toggle">Enable Voice</button>
+                <button class="header-btn">Settings</button>
+            </div>
+            <div class="right-section1">
+                <h2>Quick Controls</h2>
+                <div class="right-section1-btns">
+                    <button class="rightSectionBtn" id="increase-text">Increase Font-Size</button>
+                    <button class="rightSectionBtn" id="decrease-text">Decrease Font-Size</button>
+                    <button class="rightSectionBtn" id="light-theme">Light Theme</button>
+                    <button class="rightSectionBtn" id="dark-theme">Dark Theme</button>
+                    <button class="rightSectionBtn" id="read-page">Read Page</button>
+                    <button class="rightSectionBtn" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </main>
+        <nav class="navigation">
+            <ul>
+                <li class="firstList"> <i class="fa-solid fa-house nav-icon" id="icon1"></i> <a class="list" id="list1"
+                        href="./home.html">Home</a></li>
+                <li class="firstLists"> <i class="fa-solid fa-file-pdf nav-icon" id="icon2"></i> <a id="list2"
+                        class="list" href="./notes.html">Reader</a></li>
+                <li class="firstLists"> <i class="fa-brands fa-hire-a-helper nav-icon" id="icon3"></i> <a class="list"
+                        href="./help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-1">
+        <div class="left-section1">
+            <div class="left-div">
+                <h1>Welcome to</h1>
+                <h1 class="rotating-text">
+                    <span class="span1">AudioNotes</span> <span class="span2">Doc2Speech</span> <span
+                        class="span3">EchoRead</span>
+                </h1>
+            </div>
+            <p id="welcome-text">Upload any PDF and our website will read it aloud, making learning easier and more
+                inclusive.With simple controls, dark mode, and voice commands, reading is now just a click or word away.
+                <br>
+            </p>
+            <div class="left-section1-btns">
+                <button id="goto-notes">Changr BG Color</button>
+                <button id="read-welcome">Read Welcome</button>
+            </div>
+        </div>
+        <div class="right-portion">
+            <div class="right-portion-images"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div> Copy &copy; Rights | All Rights Reserved.</div>
+    </footer>
+</body>
+</html>

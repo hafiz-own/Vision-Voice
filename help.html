@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Voice</title>
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="icon" type="image/x-icon" href="./assets/images/myfavicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <main class="header-top">
+            <h1>Vision Voice</h1>
+            <div class="headerBtns">
+                <p id="status"></p>
+                <button class="voice-btn" id="voice-toggle">Enable Voice</button>
+                <button class="header-btn">Settings</button>
+            </div>
+            <div class="right-section1">
+                <h2>Quick Controls</h2>
+                <div class="right-section1-btns">
+                    <button class="rightSectionBtn" id="increase-text">Increase Font-Size</button>
+                    <button class="rightSectionBtn" id="decrease-text">Decrease Font-Size</button>
+                    <button class="rightSectionBtn" id="light-theme">Light Theme</button>
+                    <button class="rightSectionBtn" id="dark-theme">Dark Theme</button>
+                    <button class="rightSectionBtn" id="read-page">Read Page</button>
+                    <button class="rightSectionBtn" id="cancel">Cancel</button>
+                </div>
+            </div>
+        </main>
+        <nav class="navigation">
+            <ul>
+                <li> <i class="fa-solid fa-house nav-icon"></i> <a class="list" href="./home.html">Home</a></li>
+                <li> <i class="fa-solid fa-file-pdf nav-icon"></i> <a class="list" href="./notes.html">Reader</a></li>
+                <li> <i class="fa-brands fa-hire-a-helper nav-icon"></i> <a class="list" href="./help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-div">
+
+        <div class="about">
+            <h1>About This Website</h1>
+            <p>This website is designed to make reading educational notes and PDFs easier for visually impaired users.
+                It uses
+                text-to-speech (TTS) and voice commands to help you read documents without needing to rely only on
+                vision.</p>
+        </div>
+        <div class="sub-div1">
+
+            <div class="theme card">
+                <h3>Themes & Accessibility</h3>
+                <p>You can Increase/Decrease Font-Size of Text.</p>
+                <p>You can change Theme(Light/Dark) depending upon your choice.</p>
+                <p>Apply there features by clicking on Settings button.</p>
+            </div>
+            <div class="notes card">
+                <h3>Uploading Notes</h3>
+                <p>Click on Choose File option.</p>
+                <p>Choose a PDF file from your computer.</p>
+                <p>Apply there features by clicking on Settings button.</p>
+
+            </div>
+            </div>
+            <div class="sub-div2">
+
+            <div class="aloud card">
+                <h3>Reading Aloud</h3>
+                <p>Press Read Aloud to start listening to your uploaded notes.</p>
+                <p>Press Stop button to stop reading.</p>
+                <p>You can access these options by clicking on Setting buttons.</p>
+            </div>
+            <div class="commands card">
+                <h3>Voice Commands</h3>
+                <p>You can also control website using your voice.</p>
+                <p>First click Enable Voice button.</p>
+                <p>Then follow instructions written on Popup menu.</p>
+                <!-- <p>Then say one of these commands: Increase Font-Size, Decrease Font-Size, Light Theme, Dark Theme, Read Page, Read PDF(If uploaded), Stop Speaking.</p>  -->
+            </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div> Copy &copy; Rights | All Rights Reserved.</div>
+        </footer>
+        <script src="help.js"></script>
+</body>
+
+</html>

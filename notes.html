@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vision Voice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/myfavicon.png">
+
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+
+  <link rel="stylesheet" href="./notes.css">
+</head>
+
+<body>
+  <header>
+        <main class="header-top">
+            <h1>Vision Voice</h1>
+            <div class="headerBtns">
+                <p id="status"></p>
+                <button class="voice-btn" id="voice-toggle">Enable Voice</button>
+                <button class="header-btn">Settings</button>
+            </div>
+            <div class="right-section1">
+        <h2>Quick Controls</h2>
+        <div class="right-section1-btns">
+            <button class="rightSectionBtn" id="increase-text">Increase Font-Size</button>
+            <button class="rightSectionBtn" id="decrease-text">Decrease Font-Size</button>
+            <button class="rightSectionBtn" id="light-theme">Light Theme</button>
+            <button class="rightSectionBtn" id="dark-theme">Dark Theme</button>
+            <button class="rightSectionBtn" id="read-page">Read Page</button>
+            <button class="rightSectionBtn" id="cancel">Stop</button>
+            <button class="rightSectionBtn" id="read-pdf">Read Pdf</button>
+            <!-- <button class="rightSectionBtn" id="cancel-pdf">Cancel Pdf</button> -->
+        </div>
+        </div>
+        </main>
+        <nav class="navigation">
+            <ul>
+                <li> <i class="fa-solid fa-house nav-icon"></i> <a class="list" href="./home.html">Home</a></li>
+                <li> <i class="fa-solid fa-file-pdf nav-icon"></i> <a class="list" href="./notes.html">Reader</a></li>
+                <li> <i class="fa-brands fa-hire-a-helper nav-icon"></i> <a class="list" href="./help.html">Help</a></li>
+            </ul>
+        </nav>
+        </header>
+  <div class="wrap">
+    <h1>PDF Read Aloud</h1>
+    <p>Upload a PDF then use <strong>Read</strong>, <strong>Pause</strong>,
+      <strong>Resume</strong>, and <strong>Stop</strong>.</p>
+
+    <input id="file" type="file" accept="application/pdf" aria-label="Upload PDF file">
+    <div>
+      <!-- Add a Voice Control Button -->
+      <!-- Toggle Voice Control Button -->
+      <!-- <button id="voice" class="secondary">🎙 Enable Voice Control</button>
+      <span id="voiceStatus"></span>
+
+      <button id="themeToggle" class="secondary">🌙 Toggle Dark Mode</button> -->
+
+      <button id="read" disabled >Read</button>
+      <!-- <button id="pause" disabled class="secondary">Pause</button>
+      <button id="resume" disabled class="secondary">Resume</button> -->
+      <button id="stop" disabled  class="secondary">Stop</button>
+      <!-- <span id="progress" aria-live="polite"></span> -->
+    </div>
+
+    <!-- <p id="status" class="status1">No PDF loaded.</p> -->
+
+    <iframe class="preview" title="PDF preview"></iframe>
+
+    <!-- live region for screen readers -->
+    <!-- <div id="live" class="live" aria-live="polite" aria-atomic="true"></div> -->
+  </div>
+<footer class="footer">
+        <div> Copy &copy; Rights | All Rights Reserved.</div>
+     </footer>
+  <script src="./notes.js"></script>
+</body>
+
+</html>
